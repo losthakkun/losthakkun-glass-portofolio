@@ -1,0 +1,25 @@
+{
+  "name": "losthakkun-glass-portofolio",
+  "version": "1.0.0",
+  "description": "Losthakkun portofolio website using Next.js, ChakraUI, Framer, Motion, and Three.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Núñez Segoviano <losthakkun@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/react": "^2.3.2",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "framer-motion": "^7.3.2",
+    "next": "^12.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-next": "^12.3.0",
+    "prettier": "^2.7.1"
+  }
+}
