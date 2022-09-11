@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev -H 0.0.0",
     "build": "next build",
-    "prettier" : "prettier --write .",
+    "prettier": "prettier --write .",
     "lint": "next lint"
   },
   "repository": "https://github.com/losthakkun/losthakkun-glass-portofolio",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/losthakkun/losthakkun-glass-portofolio#readme",
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.9",
     "@chakra-ui/react": "^2.3.2",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
