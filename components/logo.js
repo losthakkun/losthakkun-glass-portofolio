@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import Link from "next/link";
 
+//* Set the LogoBox style and transition properties
 const LogoBox = styled.span`
 	height: 30px;
 	padding: 10px;
@@ -19,9 +20,12 @@ const LogoBox = styled.span`
 	}
 `
 
+//* Set the Logo component
 const Logo = () => {
+	//* Import the logo image
 	const devIcon = `/images/devicon${useColorModeValue('', '-dark')}.png`
 
+	//* Return the LogoBox component wrapped in a Link component
 	return (
 		<Link href="/" scroll={false}>
 			<a>

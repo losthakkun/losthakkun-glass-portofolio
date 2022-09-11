@@ -18,6 +18,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 //import { IoLogoGithub } from 'react-icons/io5'
 
+//* LinkItem component for navbar
 const LinkItem = ({ href, path, target, children, ...props }) => {
 	const active = path === href
 	const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
@@ -36,6 +37,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 	)
 }
 
+//* Set the Navbar component 4 handle transitions and navigation between pages
 const Navbar = props => {
 	const { path } = props
 
