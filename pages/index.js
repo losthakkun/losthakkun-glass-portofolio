@@ -72,7 +72,7 @@ const Page = () => {
 				<Paragraph>
 					I&apos;m also a freelance developer, I&apos;ve worked with clients on
 					different projects, from web applications to mobile apps. Developing
-					solutions that meet the needs of the project and fulfilling the client's
+					solutions that meet the needs of the project and fulfilling the client&apos;s
 					objectives and the possibilities of improving their expectations.
 					The projects take into account usability, available resources, scalability,
 					analytics and continuous integration.
