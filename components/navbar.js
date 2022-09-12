@@ -1,5 +1,5 @@
-import Logo from './logo'
-import NextLink from 'next/link'
+import Logo from './logo';
+import NextLink from 'next/link';
 import {
 	Box,
 	Menu,
@@ -12,16 +12,16 @@ import {
 	Container,
 	MenuButton,
 	IconButton,
-	useColorModeValue
-} from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
+	useColorModeValue,
+} from '@chakra-ui/react';
+import {HamburgerIcon} from '@chakra-ui/icons';
+import ThemeToggleButton from './theme-toggle-button';
 //import { IoLogoGithub } from 'react-icons/io5'
 
 //* LinkItem component for navbar
-const LinkItem = ({ href, path, target, children, ...props }) => {
-	const active = path === href
-	const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+const LinkItem = ({href, path, target, children, ...props}) => {
+	const active = path === href;
+	const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900');
 	return (
 		<NextLink href={href} passHref scroll={false}>
 			<Link
@@ -34,12 +34,12 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 				{children}
 			</Link>
 		</NextLink>
-	)
-}
+	);
+};
 
 //* Set the Navbar component 4 handle transitions and navigation between pages
 const Navbar = props => {
-	const { path } = props
+	const {path} = props;
 
 	return (
 		<Box
@@ -48,7 +48,7 @@ const Navbar = props => {
 			as="nav"
 			zIndex={2}
 			position="fixed"
-			css={{ backdropFilter: 'blur(10px)' }}
+			css={{backdropFilter: 'blur(10px)'}}
 			bg={useColorModeValue('#ffffff40', '#20202380')}
 		>
 			<Container
@@ -68,10 +68,10 @@ const Navbar = props => {
 				<Stack
 					flexGrow={1}
 					alignItems="center"
-					mt={{ base: 4, md: 0 }}
-					width={{ base: 'full', md: 'auto' }}
-					display={{ base: 'none', md: 'flex' }}
-					direction={{ base: 'column', md: 'row' }}
+					mt={{base: 4, md: 0}}
+					width={{base: 'full', md: 'auto'}}
+					display={{base: 'none', md: 'flex'}}
+					direction={{base: 'column', md: 'row'}}
 				>
 					<LinkItem href="/works" path={path}>
 						Works
@@ -83,7 +83,7 @@ const Navbar = props => {
 						pl={2}
 						path={path}
 						target="_blank"
-						style={{ gap: 4 }}
+						style={{gap: 4}}
 						alignItems="center"
 						display="inline-flex"
 						href="https://github.com/losthakkun/losthakkun-glass-portofolio"
@@ -96,7 +96,7 @@ const Navbar = props => {
 				<Box flex={1} align="right">
 					<ThemeToggleButton />
 
-					<Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+					<Box ml={2} display={{base: 'inline-block', md: 'none'}}>
 						<Menu isLazy id="navbar-menu">
 							<MenuButton
 								as={IconButton}
@@ -126,7 +126,7 @@ const Navbar = props => {
 				</Box>
 			</Container>
 		</Box>
-	)
-}
+	);
+};
 
-export default Navbar
+export default Navbar;

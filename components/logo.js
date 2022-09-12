@@ -1,7 +1,7 @@
-import { Text, useColorModeValue } from "@chakra-ui/react";
-import styled from "@emotion/styled";
-import Image from "next/image";
-import Link from "next/link";
+import {Text, useColorModeValue} from '@chakra-ui/react';
+import styled from '@emotion/styled';
+import Image from 'next/image';
+import Link from 'next/link';
 
 //* Set the LogoBox style and transition properties
 const LogoBox = styled.span`
@@ -18,12 +18,12 @@ const LogoBox = styled.span`
 	&:hover img {
 		transform: rotate(20deg);
 	}
-`
+`;
 
 //* Set the Logo component
 const Logo = () => {
 	//* Import the logo image
-	const devIcon = `/images/devicon${useColorModeValue('', '-dark')}.png`
+	const devIcon = `/images/devicon${useColorModeValue('', '-dark')}.png`;
 
 	//* Return the LogoBox component wrapped in a Link component
 	return (
@@ -42,7 +42,7 @@ const Logo = () => {
 				</LogoBox>
 			</a>
 		</Link>
-	)
-}
+	);
+};
 
-export default Logo
+export default Logo;

@@ -1,11 +1,11 @@
-import { Box, chakra, Container, Heading, Image, Link, useColorModeValue } from "@chakra-ui/react"
-import Paragraph from "../components/paragraph"
-import Section from "../components/section"
-import NextLink from 'next/link'
+import {Box, chakra, Container, Heading, Image, Link, useColorModeValue} from '@chakra-ui/react';
+import Paragraph from '../components/paragraph';
+import Section from '../components/section';
+import NextLink from 'next/link';
 
 const ProfileImage = chakra(Image, {
 	shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop),
-})
+});
 
 const Page = () => {
 	return (
@@ -15,25 +15,20 @@ const Page = () => {
 				mb={6}
 				borderRadius="lg"
 				textAlign="center"
-				css={{ backdropFilter: 'blur(10px)' }}
+				css={{backdropFilter: 'blur(10px)'}}
 				bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
 			>
 				Hello, I&apos;m a full-stack developer based on Mexico City.
 			</Box>
 
-			<Box display={{ md: 'flex' }}>
+			<Box display={{md: 'flex'}}>
 				<Box flexGrow={1}>
 					<Heading as="h2" variant="page-title">
 						Aleandro Núñez Segoviano
 					</Heading>
 					<p>Developer, designer and tech enthusiast.</p>
 				</Box>
-				<Box
-					ml={{ md: 6 }}
-					flexShrink={0}
-					textAlign="center"
-					mt={{ base: 4, md: 0 }}
-				>
+				<Box ml={{md: 6}} flexShrink={0} textAlign="center" mt={{base: 4, md: 0}}>
 					<Box
 						w="100px"
 						h="100px"
@@ -60,21 +55,31 @@ const Page = () => {
 					About me
 				</Heading>
 				<Paragraph>
-					I&apos;m a full-stack developer based on Mexico City. I&apos;m
-					currently working as a freelancer and I&apos;m looking for
-					opportunities to work on interesting projects.
-
-					I&apos;m a self-taught developer, I&apos;ve been working on
-					projects for more than 5 years. I&apos;m passionate about
-					technology and I&apos;m always learning new things and {` `}
-					<NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
-          </NextLink>
-          .
+					I&apos;m a full-stack developer with a passion for design and technology. I&apos;m
+					cuurious about everything, I love to learn new things and I&apos;m always looking
+					for new challenges.
+				</Paragraph>
+				<Paragraph>
+					I&apos;m currently working as a full-stack developer at{' '}
+					<NextLink href="https://www.voxpop.com.mx/" passHref scroll={false}>
+						<Link>VoxPop</Link>
+					</NextLink>
+					. As part of a multidisciplinary team in charge of maintaining and
+					modernizing the technological and digital part of the company
+					and at the same time incorporating new tools, products, b2b and
+					b2c solutions.
+				</Paragraph>
+				<Paragraph>
+					I&apos;m also a freelance developer, I&apos;ve worked with clients on
+					different projects, from web applications to mobile apps. Developing
+					solutions that meet the needs of the project and fulfilling the client's
+					objectives and the possibilities of improving their expectations.
+					The projects take into account usability, available resources, scalability,
+					analytics and continuous integration.
 				</Paragraph>
 			</Section>
 		</Container>
-	)
-}
+	);
+};
 
-export default Page
+export default Page;

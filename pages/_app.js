@@ -1,10 +1,10 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import Fonts from "../components/fonts";
-import Layout from "../components/layouts/main";
-import theme from "../lib/theme";
+import {ChakraProvider} from '@chakra-ui/react';
+import Fonts from '../components/fonts';
+import Layout from '../components/layouts/main';
+import theme from '../lib/theme';
 
 //* Set WebSite 4 wrapper
-const Website = ({ Component, pageProps, router }) => {
+const Website = ({Component, pageProps, router}) => {
 	//* Wrap the ChakraProvider around the Layout component */
 	return (
 		<ChakraProvider theme={theme}>
@@ -16,6 +16,6 @@ const Website = ({ Component, pageProps, router }) => {
 			</Layout>
 		</ChakraProvider>
 	);
-}
+};
 
 export default Website;
