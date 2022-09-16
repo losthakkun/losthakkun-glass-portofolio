@@ -1,7 +1,9 @@
 import {Box, chakra, Container, Heading, Image, Link, useColorModeValue} from '@chakra-ui/react';
+import NextLink from 'next/link';
+
+import { BioSection, BioYear } from '../components/bio';
 import Paragraph from '../components/paragraph';
 import Section from '../components/section';
-import NextLink from 'next/link';
 
 const ProfileImage = chakra(Image, {
 	shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop),
@@ -56,13 +58,13 @@ const Page = () => {
 				</Heading>
 				<Paragraph>
 					I&apos;m a full-stack developer with a passion for design and technology. I&apos;m
-					cuurious about everything, I love to learn new things and I&apos;m always looking
+					curious about everything, I love to learn new things, and I&apos;m always looking
 					for new challenges.
 				</Paragraph>
 				<Paragraph>
 					I&apos;m currently working as a full-stack developer at{' '}
 					<NextLink href="https://www.voxpop.com.mx/" passHref scroll={false}>
-						<Link>VoxPop</Link>
+						<Link target="_blank">VoxPop</Link>
 					</NextLink>
 					. As part of a multidisciplinary team in charge of maintaining and
 					modernizing the technological and digital part of the company
@@ -70,7 +72,7 @@ const Page = () => {
 					b2c solutions.
 				</Paragraph>
 				<Paragraph>
-					I&apos;m also a freelance developer, I&apos;ve worked with clients on
+					I&apos;m also working as a freelance developer, I&apos;ve worked with clients on
 					different projects, from web applications to mobile apps. Developing
 					solutions that meet the needs of the project and fulfilling the client&apos;s
 					objectives and the possibilities of improving their expectations.
@@ -78,6 +80,60 @@ const Page = () => {
 					analytics and continuous integration.
 				</Paragraph>
 			</Section>
+
+			<Section delay={0.2}>
+				<Heading as="h3" variant="section-title">
+					Bio
+				</Heading>
+				<BioSection>
+					<BioYear>1988</BioYear>
+					<br />
+					Born in CDMX, México.
+				</BioSection>
+				<BioSection>
+					<BioYear>2013</BioYear>
+					<br />
+					I started working as a Support Technician on site at{' '}
+					<NextLink href="https://www.voxpop.com.mx/" passHref scroll={false}>
+						<Link target="_blank">VoxPop</Link>
+					</NextLink>.
+					Collaborating in Assembly, configuration, installation, and
+					maintenance of dedicated equipment for music on wholesale and retail stores.
+				</BioSection>
+				<BioSection>
+					<BioYear>2017</BioYear>
+					<br />
+					I was promoted to the development and IT area to collaborate in the
+					development of new technologies in software and hardware to offer
+					customized solutions to our clients.
+				</BioSection>
+				<BioSection>
+					<BioYear>2019 to present</BioYear>
+					<br />
+					Continuing with the creation of new technologies and experimenting
+					with digital solutions. I have focused on the development of
+					mobile applications. In order to improve the integration of
+					new products and services. As well as digitizing maintenance,
+					administration and sales processes.
+				</BioSection>
+			</Section>
+
+			<Section delay={0.3}>
+				<Heading as="h3" variant="section-title">
+					I ♥
+				</Heading>
+				<Paragraph>
+					Programming, New technologies, Design,
+					Art, Music,{' '}
+					<Link href="https://www.tumblr.com/blog/losthakkun-blog/" target="_blank">
+						Drawing,
+						Photography
+					</Link>
+					, DIY projects, Physics, HiEnd audio,
+					and projects that creatively engage several of my interests.
+				</Paragraph>
+			</Section>
+
 		</Container>
 	);
 };
