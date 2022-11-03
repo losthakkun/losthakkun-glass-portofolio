@@ -1,13 +1,13 @@
 module.exports = {
-	"root": true,
-	"extends": "next",
-	"rules": {
-		"no-unused-vars": [
-			"error",
+	root: true,
+	extends: 'next',
+	rules: {
+		'no-unused-vars': [
+			'error',
 			{
-				"argsIgnorePattern": "^_",
-				"varsIgnorePattern": "^_"
-			}
-		]
-	}
+				argsIgnorePattern: '^_',
+				varsIgnorePattern: '^_',
+			},
+		],
+	},
 };
