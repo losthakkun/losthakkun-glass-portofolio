@@ -1,7 +1,7 @@
 import {Box, chakra, Container, Heading, Image, Link, useColorModeValue} from '@chakra-ui/react';
 import NextLink from 'next/link';
 
-import { BioSection, BioYear } from '../components/bio';
+import {BioSection, BioYear} from '../components/bio';
 import Paragraph from '../components/paragraph';
 import Section from '../components/section';
 
@@ -24,13 +24,13 @@ const Page = () => {
 			</Box>
 
 			<Box display={{md: 'flex'}}>
-				<Box flexGrow={1}>
+				<Box flexGrow={1} zIndex={1}>
 					<Heading as="h2" variant="page-title">
 						Aleandro Núñez Segoviano
 					</Heading>
 					<p>Developer, designer and tech enthusiast.</p>
 				</Box>
-				<Box ml={{md: 6}} flexShrink={0} textAlign="center" mt={{base: 4, md: 0}}>
+				<Box zIndex={1} ml={{md: 6}} flexShrink={0} textAlign="center" mt={{base: 4, md: 0}}>
 					<Box
 						w="100px"
 						h="100px"
@@ -57,27 +57,25 @@ const Page = () => {
 					About me
 				</Heading>
 				<Paragraph>
-					I&apos;m a full-stack developer with a passion for design and technology. I&apos;m
-					curious about everything, I love to learn new things, and I&apos;m always looking
-					for new challenges.
+					I&apos;m a full-stack developer with a passion for design and technology. I&apos;m curious
+					about everything, I love to learn new things, and I&apos;m always looking for new
+					challenges.
 				</Paragraph>
 				<Paragraph>
 					I&apos;m currently working as a full-stack developer at{' '}
 					<NextLink href="https://www.voxpop.com.mx/" passHref scroll={false}>
 						<Link target="_blank">VoxPop</Link>
 					</NextLink>
-					. As part of a multidisciplinary team in charge of maintaining and
-					modernizing the technological and digital part of the company
-					and at the same time incorporating new tools, products, b2b and
-					b2c solutions.
+					. As part of a multidisciplinary team in charge of maintaining and modernizing the
+					technological and digital part of the company and at the same time incorporating new
+					tools, products, b2b and b2c solutions.
 				</Paragraph>
 				<Paragraph>
-					I&apos;m also working as a freelance developer, I&apos;ve worked with clients on
-					different projects, from web applications to mobile apps. Developing
-					solutions that meet the needs of the project and fulfilling the client&apos;s
-					objectives and the possibilities of improving their expectations.
-					The projects take into account usability, available resources, scalability,
-					analytics and continuous integration.
+					I&apos;m also working as a freelance developer, I&apos;ve worked with clients on different
+					projects, from web applications to mobile apps. Developing solutions that meet the needs
+					of the project and fulfilling the client&apos;s objectives and the possibilities of
+					improving their expectations. The projects take into account usability, available
+					resources, scalability, analytics and continuous integration.
 				</Paragraph>
 			</Section>
 
@@ -87,33 +85,27 @@ const Page = () => {
 				</Heading>
 				<BioSection>
 					<BioYear>1988</BioYear>
-					<br />
 					Born in CDMX, México.
 				</BioSection>
 				<BioSection>
-					<BioYear>2013</BioYear>
-					<br />
-					I started working as a Support Technician on site at{' '}
+					<BioYear>2013</BioYear>I started working as a Support Technician on site at{' '}
 					<NextLink href="https://www.voxpop.com.mx/" passHref scroll={false}>
 						<Link target="_blank">VoxPop</Link>
-					</NextLink>.
-					Collaborating in Assembly, configuration, installation, and
-					maintenance of dedicated equipment for music on wholesale and retail stores.
+					</NextLink>
+					. Collaborating in Assembly, configuration, installation, and maintenance of dedicated
+					equipment for music on wholesale and retail stores.
 				</BioSection>
 				<BioSection>
-					<BioYear>2017</BioYear>
-					<br />
-					I was promoted to the development and IT area to collaborate in the
-					development of new technologies in software and hardware to offer
-					customized solutions to our clients.
+					<BioYear>2017</BioYear>I was promoted to the development and IT area to collaborate in the
+					development of new technologies in software and hardware to offer customized solutions to
+					our clients.
 				</BioSection>
 				<BioSection>
 					<BioYear>2019 to present</BioYear>
 					<br />
-					Continuing with the creation of new technologies and experimenting
-					with digital solutions. I have focused on the development of
-					mobile applications. In order to improve the integration of
-					new products and services. As well as digitizing maintenance,
+					Continuing with the creation of new technologies and experimenting with digital solutions.
+					I have focused on the development of mobile applications. In order to improve the
+					integration of new products and services. As well as digitizing maintenance,
 					administration and sales processes.
 				</BioSection>
 			</Section>
@@ -123,17 +115,14 @@ const Page = () => {
 					I ♥
 				</Heading>
 				<Paragraph>
-					Programming, New technologies, Design,
-					Art, Music,{' '}
+					Programming, New technologies, Design, Art, Music,{' '}
 					<Link href="https://www.tumblr.com/blog/losthakkun-blog/" target="_blank">
-						Drawing,
-						Photography
+						Drawing, Photography
 					</Link>
-					, DIY projects, Physics, HiEnd audio,
-					and projects that creatively engage several of my interests.
+					, DIY projects, Physics, HiEnd audio, and projects that creatively engage several of my
+					interests.
 				</Paragraph>
 			</Section>
-
 		</Container>
 	);
 };
